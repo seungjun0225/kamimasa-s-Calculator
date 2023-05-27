@@ -1,1 +1,0 @@
-# kamimasa-s-Calculator

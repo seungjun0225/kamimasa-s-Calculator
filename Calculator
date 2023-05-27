@@ -1,0 +1,51 @@
+class Cal:
+    def __init__(self, first, second, third):
+        self.first = first
+        self.second = second
+        self.third = third
+
+    def setdata(self, first, second, third):
+        self.first = first
+        self.second = second
+        self.third = third
+
+    def add(self):
+        result = self.first + self.second + self.third
+        return result
+
+    def div(self):
+        result = self.first / self.second
+        return result
+
+    def sub(self):
+        result = self.first - self.second - self.third
+        return result
+
+    def gob(self):
+        result = self.first * self.second * self.third
+        return result
+    
+class UpgradeCal(Cal):
+    
+    def pow(self):
+        result = self.first ** self.second
+        return result
+    
+    def dev(self):
+        result = (self.first + self.second + self.third) / 3
+        return result
+
+    def div(self):
+        if self.second == 0:
+            return 0
+        else:
+            return self.first / self.second
+        
+test1 = UpgradeCal(5, 3, 2)
+
+print(test1.add())
+print(test1.div())
+print(test1.sub())
+print(test1.gob())
+print(test1.pow())
+print(test1.dev())
